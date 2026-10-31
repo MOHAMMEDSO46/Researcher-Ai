@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-academic-bg: #f8fafc;
+    --color-academic-paper: #ffffff;
+    --color-academic-border: #e2e8f0;
+  }
+  
+  .dark {
+    --color-academic-bg: #090d16;
+    --color-academic-paper: #0f172a;
+    --color-academic-border: #1e293b;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+}
+
+.font-academic {
+  font-family: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Academic Paper Styling & Print Options */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .paper-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  @page {
+    margin: 1in;
+    size: letter portrait;
+  }
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.7);
+}

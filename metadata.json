@@ -1,0 +1,6 @@
+{
+  "name": "ResearchAI - Academic Research & Writing Assistant",
+  "description": "A modern, professional AI-powered research writing platform for university students, researchers, and academics to brainstorm topics, structure research, generate outlines, and draft academic papers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
